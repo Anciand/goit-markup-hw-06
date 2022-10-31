@@ -472,6 +472,7 @@ img {
 .location {
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--background);
@@ -485,6 +486,7 @@ img {
 .contact {
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -534,6 +536,12 @@ img {
   margin-right: 93px;
 }
 /* form styles */
+.footer-form-container {
+  width: 570px;
+}
+.footer-form {
+  display: flex;
+}
 .form-header {
   padding: 0;
   margin: 0 0 20px 0;
@@ -546,7 +554,7 @@ img {
 }
 .footer-send-btn {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 12px;
   width: 200px;
   height: 50px;
   display: flex;
@@ -577,7 +585,6 @@ img {
   padding: 0;
   width: 358px;
   height: 50px;
-  border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -801,4 +808,14 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background: var(--btn-hover);
+}
+.modal-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-fields {
+  display: flex;
+  flex-direction: column;
 }
