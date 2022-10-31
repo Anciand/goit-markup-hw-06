@@ -472,7 +472,7 @@
         <!-- footer form -->
         <b class="form-header">Підпишіться на розсилку</b>
         <form action="">
-          <input type="email" />
+          <input type="email" class="footer-form-input" placeholder="E-mail" />
           <button type="submit" class="footer-send-btn">
             Підписатися
             <svg class="icon icon-send" width="24" height="24">
@@ -491,6 +491,25 @@
             <use href="./images/symbol-defs.svg#close-modal"></use>
           </svg>
         </button>
+
+        <h1 class="modal-title">Залиште свої дані, ми вам передзвонимо</h1>
+        <!-- name -->
+        <label for="" class="modal-label-text">Ім'я</label>
+        <input type="text" />
+        <!-- tel -->
+        <label for="" class="modal-label-text">Телефон</label>
+        <input type="text" />
+        <!-- mail -->
+        <label for="" class="modal-label-text">Пошта</label>
+        <input type="text" />
+        <!-- comments -->
+        <label for="" class="modal-label-text">Коментар</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- policy -->
+        <input type="checkbox" />
+        <p>Погоджуюся з розсилкою та приймаю <span>Умови договору</span></p>
+        <!-- send button -->
+        <button type="submit" class="modal-btn">Відправити</button>
       </div>
     </div>
 
