@@ -843,14 +843,21 @@ img {
   justify-content: center;
   width: 448px;
   margin: 0 auto;
+  gap: 10px;
 }
+
 .modal-field {
   display: block;
   position: relative;
+  /* margin-bottom: 10px; */
 }
+/* .modal-field:focus-within {
+  border: var(--decorative-color);
+  color: var(--decorative-color);
+} */
 .modal-input {
-  margin: 0 0 10px 0;
-  padding: 0;
+  margin: 0;
+  padding: 0 0 0 42px;
 
   width: 448px;
   height: 40px;
@@ -867,12 +874,24 @@ img {
   line-height: 1.15;
   letter-spacing: 0.01em;
   color: var(--text-color);
-
-  transform: translateY(-50%);
 }
 .modal-field .icon {
   position: absolute;
   top: 50%;
   left: 12px;
-  transform: translateY(-50%);
+}
+.modal-comments {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  /* margin-bottom: 20px; */
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
