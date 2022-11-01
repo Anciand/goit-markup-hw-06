@@ -535,16 +535,19 @@ img {
 .footer-socials {
   margin-right: 93px;
 }
+
 /* form styles */
 .footer-form-container {
   width: 570px;
 }
 .footer-form {
   display: flex;
+  align-items: center;
 }
 .form-header {
   padding: 0;
   margin: 0 0 20px 0;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
@@ -581,14 +584,42 @@ img {
 .footer-send-btn:focus {
   background-color: var(--btn-hover);
 }
+.form-field {
+  position: relative;
+  /* overflow: hidden; */
+}
 .footer-form-input {
   padding: 0;
   width: 358px;
   height: 50px;
+
+  color: var(--background);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--background-hero);
+}
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  opacity: 1;
+
+  transition: transform var(--transit-time) var(--transit-function),
+    opacity var(--transit-time) var(--transit-function);
+  transform: translateY(-50%);
+}
+.form-field:focus-within > .form-label {
+  transform: translateY(50px);
+  opacity: 0;
 }
 /* ------------- */
 
@@ -816,7 +847,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.modal-fields {
+.modal-form {
   display: flex;
   flex-direction: column;
 }
