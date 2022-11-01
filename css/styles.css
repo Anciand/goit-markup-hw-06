@@ -843,18 +843,17 @@ img {
   justify-content: center;
   width: 448px;
   margin: 0 auto;
-  gap: 10px;
+  /* gap: 10px; */
 }
-
 .modal-field {
   display: block;
   position: relative;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }
-/* .modal-field:focus-within {
-  border: var(--decorative-color);
-  color: var(--decorative-color);
-} */
+.comment-field {
+  display: block;
+  margin-bottom: 20px;
+}
 .modal-input {
   margin: 0;
   padding: 0 0 0 42px;
@@ -894,4 +893,18 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+/* policy */
+.policy {
+  margin: 0 auto 30px auto;
+}
+.policy-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.checkbox {
+  appearance: none;
 }
