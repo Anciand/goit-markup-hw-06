@@ -905,6 +905,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.policy-text a {
+  text-decoration-line: underline;
+  color: #2196f3;
+}
 .checkbox {
   appearance: none;
 }
