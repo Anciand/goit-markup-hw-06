@@ -588,7 +588,7 @@ img {
   position: relative;
 }
 .footer-form-input {
-  padding: 0;
+  padding: 0 0 0 16px;
   width: 358px;
   height: 50px;
 
@@ -897,7 +897,7 @@ img {
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: rgba(57, 57, 57, 0.9);
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -955,4 +955,5 @@ img {
   background-image: url('../images/icon-check.svg');
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
